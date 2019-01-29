@@ -40,9 +40,9 @@ class App extends Component {
     };
     render() {
         return (
-            <Layout>
+            <Layout >
                 <BackTopButton/>
-                <Header>
+                <Header >
                     <div>
                     <Button
                         type={"primary"}
