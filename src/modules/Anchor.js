@@ -19,7 +19,7 @@ class AnchorMe extends Component{
                     <Link href={"#Website"} title={"工具"}/>
                     <Link href={"#Movies"} title={"影片"}/>
                     <Link href={"#OJ"} title={"在线测评"}/>
-                    <Link href={"Funny"} title={"异"}/>
+                    <Link href={"#Funny"} title={"异"}/>
                     <Link href={"#Spirit"} title={"情态"}/>
                     <Link href={"#Goods"} title={"好物"}/>
                 </Anchor>
