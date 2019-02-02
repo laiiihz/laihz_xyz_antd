@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Button, Drawer, Layout,Icon} from 'antd';
+import {Button, Drawer, Layout, Icon, Modal} from 'antd';
 import Navi from "../modules/Navigate"
 import BackTopButton from "../modules/SomeBlock";
 import {Route} from 'react-router-dom';
@@ -12,13 +12,43 @@ import FooterMe from "../modules/Footer";
 import {Link,Switch} from 'react-router-dom';
 import RandomPG from './RandomPG';
 import Page404 from "./P404";
+import QRCode from "qrcode.react";
 
 const {
   Header,
 }=Layout;
 
 
+class ModalNav extends  Component{
+    state={visible:false};
+    showModal=()=>{
+        this.setState({
+            visible:true,
+        })
+    };
+    handleOk=(e)=>{
+        this.setState({visible:false,})
+    };
+    handleCancel=(e)=>{
+        this.setState({visible:false})
+    };
 
+    render() {
+        return (
+            <div>
+                <Button shape="circle" size={"large"} htmlType={'button'} type="primary " onClick={this.showModal} icon={"qrcode"}/>
+                <Modal
+                    title={"分享此页面"}
+                    visible={this.state.visible}
+                    onOk={this.handleOk}
+                    onCancel={this.handleCancel}
+                >
+                    <QRCode value={"http://laihz.xyz"}/>
+                </Modal>
+            </div>
+        );
+    }
+}
 
 
 
@@ -61,6 +91,7 @@ class App extends Component {
                         visible={this.state.visible}
                         width={128}
                     >
+
                         <Link to={"/"}>
                             <Button
                             type="primary"
@@ -71,6 +102,8 @@ class App extends Component {
                             />
                         </Link>
                         <br/><br/>
+                        <ModalNav/>
+                        <br/>
                         <Link to={"/ss"} >
                             <Button
                                 type="primary"
