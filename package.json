@@ -9,6 +9,7 @@
     "rc-scroll-anim": "^2.5.6",
     "rc-texty": "^0.2.0",
     "react": "^16.7.0",
+    "react-amap": "^1.2.8",
     "react-dom": "^16.7.0",
     "react-route": "^1.0.3",
     "react-router": "^4.3.1",

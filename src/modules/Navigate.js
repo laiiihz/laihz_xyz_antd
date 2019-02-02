@@ -40,6 +40,13 @@ class Navi extends Component{
                     <a href="https://github.com/laiiihz"
                     ><Icon type={"github"}/>Github</a>
                 </MenuItem>
+                <MenuItem
+                    key={"map"}>
+                    <Link to="/amap">
+                        <Icon type="environment" />Map
+                    </Link>
+                </MenuItem>
+
 
                 <MenuItem style={{float:'right'}} disabled>
                     <Tag color="#f50">preview</Tag>

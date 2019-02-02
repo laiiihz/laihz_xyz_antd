@@ -7,6 +7,7 @@ import {Route} from 'react-router-dom';
 import 'rc-texty/assets/index.css';
 import Home from "./Home";
 import Smirror from "./ss-mirror";
+import  MapMe from "./Map";
 import FooterMe from "../modules/Footer";
 import {Link,Switch} from 'react-router-dom';
 import RandomPG from './RandomPG';
@@ -107,6 +108,7 @@ class App extends Component {
                         <Route exact path="/" component={Home}/>
                         <Route path="/ss" component={Smirror}/>
                         <Route path="/randompg" component={RandomPG}/>
+                        <Route path="/amap" component={MapMe}/>
                         <Route component={Page404}/>
                     </Switch>
                 </div>
