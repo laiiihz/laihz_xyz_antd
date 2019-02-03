@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 const {Search}=Input;
 
 
+
 class Navi extends Component{
     state={
         current:this.props.status,
@@ -46,6 +47,7 @@ class Navi extends Component{
                         <Icon type="environment" />Map
                     </Link>
                 </MenuItem>
+
 
 
                 <MenuItem style={{float:'right'}} disabled>
