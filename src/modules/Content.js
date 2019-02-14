@@ -19,7 +19,8 @@ const webSites={
         Jetbrains:'https://www.jetbrains.com/',
         StackOverFlow:'https://stackoverflow.com',
         Github:'https://github.com/',
-        V2EX:'https://www.v2ex.com/'
+        V2EX:'https://www.v2ex.com/',
+        segmentfault:'https://segmentfault.com'
     },
     LinuxDistribution:{
         Manjaro:'https://manjaro.org/',
