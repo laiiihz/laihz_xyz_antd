@@ -1,5 +1,5 @@
 import React,{Component} from "react"
-import {Icon, Menu, Tag, Input} from "antd";
+import {Icon, Menu, Tag, Input,Affix} from "antd";
 import MenuItem from "antd/lib/menu/MenuItem";
 import {Link} from 'react-router-dom';
 const {Search}=Input;
@@ -20,6 +20,7 @@ class Navi extends Component{
 
     render(){
         return(
+            <Affix>
             <Menu
                 id={"Nav"}
                 theme={"dark"}
@@ -69,6 +70,7 @@ class Navi extends Component{
 
 
             </Menu>
+            </Affix>
         );
     }
 }

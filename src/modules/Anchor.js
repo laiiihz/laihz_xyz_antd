@@ -6,9 +6,8 @@ class AnchorMe extends Component{
         return (
 
                 <Anchor
-                    style={{zIndex:"1"}}
+                    style={{zIndex:"1",marginTop:65}}
                 >
-                    <Link href={"#Nav"} title={" "}/>
                     <Link href={"#Main"} title={" "}/>
                     <Link href={"#SearchEngine"} title={"搜索引擎"}/>
                     <Link href={"#DeveloperWeb"} title={"开发相关"}/>
