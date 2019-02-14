@@ -47,6 +47,12 @@ class Navi extends Component{
                         <Icon type="environment" />Map
                     </Link>
                 </MenuItem>
+                <MenuItem
+                    key={"movie"}>
+                    <Link to="/movie">
+                        <Icon type="video-camera" />Movie
+                    </Link>
+                </MenuItem>
 
 
 

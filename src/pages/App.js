@@ -13,6 +13,7 @@ import {Link,Switch} from 'react-router-dom';
 import RandomPG from './RandomPG';
 import Page404 from "./P404";
 import QRCode from "qrcode.react";
+import MovieDisplay from "./MovieDisp";
 
 const {
   Header,
@@ -142,6 +143,7 @@ class App extends Component {
                         <Route path="/ss" component={Smirror}/>
                         <Route path="/randompg" component={RandomPG}/>
                         <Route path="/amap" component={MapMe}/>
+                        <Route path="/movie" component={MovieDisplay} />
                         <Route component={Page404}/>
                     </Switch>
                 </div>
